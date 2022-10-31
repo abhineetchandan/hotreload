@@ -8,6 +8,6 @@ import io.flutter.embedding.engine.FlutterEngine
 class MainActivity: FlutterActivity() {
     override fun provideFlutterEngine(context: Context): FlutterEngine? {
         val appData: Bug = applicationContext as Bug
-        return appData.engineGroup.createAndRunDefaultEngine(context)
+        return appData.engineGroup!!.createAndRunDefaultEngine(context)
     }
 }
